@@ -13,21 +13,24 @@ import pickle
 import random
 import plotly.express as px
 
-# ── Page config ──────────────────────────────────────────────────
-st.set_page_config(
-    page_title="ASENXO | Completion Dashboard",
-    page_icon="📊",
-    layout="wide",
-)
+
 # ═══════════════════════════════════════════════════════════════
 # HERO
 # ═══════════════════════════════════════════════════════════════
+
 st.markdown("""
 <div class="page-hero">
     <h1>📊 MSME Project Completion Dashboard</h1>
     <p>DOST SETUP 4.0 iFund Program — Western Visayas | Model-driven risk assessment (dummy data)</p>
 </div>
 """, unsafe_allow_html=True)
+# ── Page config ──────────────────────────────────────────────────
+st.set_page_config(
+    page_title="ASENXO | Completion Dashboard",
+    page_icon="📊",
+    layout="wide",
+)
+
 
 RANDOM_STATE = 42
 random.seed(RANDOM_STATE)
