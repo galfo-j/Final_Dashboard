@@ -19,6 +19,15 @@ st.set_page_config(
     page_icon="📊",
     layout="wide",
 )
+# ═══════════════════════════════════════════════════════════════
+# HERO
+# ═══════════════════════════════════════════════════════════════
+st.markdown("""
+<div class="page-hero">
+    <h1>📊 MSME Project Completion Dashboard</h1>
+    <p>DOST SETUP 4.0 iFund Program — Western Visayas | Model-driven risk assessment (dummy data)</p>
+</div>
+""", unsafe_allow_html=True)
 
 RANDOM_STATE = 42
 random.seed(RANDOM_STATE)
@@ -405,17 +414,6 @@ combined = pd.concat([
     filt_approved.assign(Group="Approved"),
     filt_applicant.assign(Group="Applicant"),
 ])
-
-# ═══════════════════════════════════════════════════════════════
-# HERO
-# ═══════════════════════════════════════════════════════════════
-st.markdown("""
-<div class="page-hero">
-    <h1>📊 MSME Project Completion Dashboard</h1>
-    <p>DOST SETUP 4.0 iFund Program — Western Visayas | Model-driven risk assessment (dummy data)</p>
-</div>
-""", unsafe_allow_html=True)
-
 # ═══════════════════════════════════════════════════════════════
 # PORTFOLIO KPIs
 # ═══════════════════════════════════════════════════════════════
